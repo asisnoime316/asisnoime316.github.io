@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <title>About - Noime's Favorite Worship Songs</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styling */
+        header {
+            background: url(img/noime.jpg) center/cover no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        header h1 {
+            font-size: 3rem;
+        }
+
+        /* About Section */
+        .about-content {
+            margin-top: 3rem;
+        }
+        .about-content img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .mission {
+            background: #f3f4f6;
+            padding: 3rem 1rem;
+            border-radius: 10px;
+            margin-top: 3rem;
+        }
+        .btn {
+            background-color: #1a237e !important;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+        .mission-vision-wrapper {
+            background-color: #f1f1f1;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .mission, .vision {
+            cursor: pointer;
+            color: #1a237e;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .mission:hover, .vision:hover {
+            background-color: #e8eaf6;
+        }
+        .mission-content, .vision-content {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border-left: 4px solid #1a237e;
+            background-color: #e8eaf6;
+            border-radius: 5px;
+        }
+        .show-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="nav-wrapper grey darken-4">
+    <div class="container">
+        <a href="index.html" class="brand-logo">Noime's Favorite Worship Songs</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+            <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="song.html">Songs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="sidenav grey lighten-2" id="mobile-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="song.html">Songs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Header Section -->
+<header>
+    <h1>About Me</h1>
+</header>
+
+<!-- About Me Section -->
+<section class="container about-content">
+    <div class="row">
+        <div class="col s12 l6">
+            <h2 class="indigo-text text-darken-4">Hi, I'm Noime!</h2>
+            <p>
+                Welcome to My Favorite Worship Songs! My passion for worship music has been a source of strength and inspiration throughout my journey. I created this platform to share the power of worship and connect with people who are also uplifted by these beautiful songs.
+            </p>
+            <p>
+                Music has a unique way of touching hearts and minds. Whether you're listening in times of joy or seeking peace during tough times, I hope these worship songs guide you closer to faith and hope.
+            </p>
+            <p>
+                Worship music has always been a sanctuary for my soul, a place where I find solace and a deeper connection to my faith. Each melody and lyric tells a story of love, grace, and redemption, resonating with the core of my beliefs. I believe these songs have the power to transcend barriers, uniting people through a shared sense of spirituality and purpose.
+            </p>
+            <p>
+                Through this collection of my favorite worship songs, I want to inspire and encourage you to explore the beauty of worship. Whether you are singing along, reflecting on the words, or simply enjoying the music, I hope this space becomes a source of comfort, joy, and inspiration for you. May these songs bring light to your days and a renewed sense of faith in your heart.
+            </p>
+            <p>
+                As you navigate through this website, feel free to share your own favorite worship songs or experiences with music. Together, let's celebrate the profound impact of worship songs and their ability to draw us closer to our Creator and to one another.
+            </p>
+            
+        </div>
+        <div class="col s12 l6">
+            <img src="img/asis.jpg" alt="About Me">
+        </div>
+    </div>
+</section>
+
+<!-- Mission & Vision Section -->
+<div class="container section">
+    <h3 class="indigo-text text-darken-4 center-align">Mission & Vision</h3>
+    <div class="mission-vision-wrapper">
+        <!-- Mission -->
+        <div class="mission" onclick="toggleContent('mission')">Mission</div>
+        <div class="mission-content" id="mission-content">
+            <p>Our mission is to inspire and connect individuals through worship, bringing them closer to God, and providing a space for them to express their faith through music.</p>
+        </div>
+
+        <!-- Vision -->
+        <div class="vision" onclick="toggleContent('vision')">Vision</div>
+        <div class="vision-content" id="vision-content">
+            <p>Our vision is to create a community united by worship, where individuals are empowered to live out their faith and spread love, hope, and peace through music.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer grey darken-3">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 l6">
+                <h5>Connect</h5>
+                <p>Feel free to follow me on social media for more updates on my worship journey:</p>
+                <ul>
+                    <li><a href="#" class="grey-text text-lighten-3"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#" class="grey-text text-lighten-3"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#" class="grey-text text-lighten-3"><i class="fab fa-twitter"></i> Twitter</a></li>
+                </ul>
+            </div>
+            <div class="col s12 l6">
+                <h5>Verse</h5>
+                <p class="grey-text text-lighten-3">"Let everything that has breath praise the Lord!" - Psalm 150:6</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+        <div class="container center-align">
+            &copy; 2024 Noime's Worship Collection
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery.js"></script>
+<script src="js/materialize.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('.scrollspy').scrollSpy();
+    });
+    
+    function toggleContent(type) {
+        var content = document.getElementById(type + '-content');
+        var allContents = document.querySelectorAll('.mission-content, .vision-content');
+        allContents.forEach(function(item) {
+            if (item !== content) item.classList.remove('show-content');
+        });
+
+        content.classList.toggle('show-content');
+    }
+</script>
+
+</body>
+</html>

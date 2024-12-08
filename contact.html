@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <title>Contact - Noime's Worship Songs</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styling */
+        header {
+            background: url(img/red.jpg) center/cover no-repeat;
+            height: 130vh; 
+            display: flex;  
+            justify-content: center;
+            align-items: center;
+        }
+        header h1 {
+            color: white;
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            margin: 0;
+        }
+
+        /* Section Padding */
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+
+        /* Button Styling */
+        .btn {
+            background-color: #1a237e !important;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="nav-wrapper grey darken-4">
+    <div class="container">
+        <a href="index.html" class="brand-logo">Noime's Favorite Worship Songs</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+            <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="song.html">Songs</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <ul class="sidenav grey lighten-2" id="mobile-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="song.html">Songs</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Header Section -->
+<header>
+    <h1>Contact Me</h1>
+</header>
+
+<!-- Contact Form Section -->
+<section class="container section scrollspy" id="contact">
+    <div class="row">
+        <div class="col s12 l5">
+            <h2 class="indigo-text text-darken-4">Get in Touch</h2>
+            <p>I’d love to hear how these worship songs have touched your life. Share your thoughts, testimonies, or song favorites with me!</p>
+            <p>If you’d like me to feature a specific song or provide resources, let me know!</p>
+            <p>Whether you have a question, a prayer request, or a favorite worship song to share, don’t hesitate to reach out.</p>
+        </div>
+        <div class="col s12 l5 offset-l2">
+            <form>
+                <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <label for="email">Your Email</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">message</i>
+                    <textarea id="message" class="materialize-textarea" placeholder="Write your message here"></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">date_range</i>
+                    <input type="text" id="date" class="datepicker" placeholder="Pick a date">
+                    <label for="date">Choose a date to connect...</label>
+                </div>
+                <div class="input-field center">
+                    <button class="btn waves-effect waves-light" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="page-footer grey darken-3">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 l6">
+                <h5>Connect</h5>
+                <p>Feel free to follow me on social media for more updates on my worship journey:</p>
+                <ul>
+                    <li><a href="#" class="grey-text text-lighten-3"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#" class="grey-text text-lighten-3"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#" class="grey-text text-lighten-3"><i class="fab fa-twitter"></i> Twitter</a></li>
+                </ul>
+            </div>
+            <div class="col s12 l6">
+                <h5>Verse</h5>
+                <p class="grey-text text-lighten-3">"Let everything that has breath praise the Lord!" - Psalm 150:6</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+        <div class="container center-align">
+            &copy; 2024 Noime's Worship Collection
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery.js"></script>
+<script src="js/materialize.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('.datepicker').datepicker({
+            format: 'yyyy-mm-dd',
+            disableWeekends: true,
+            autoClose: true
+        });
+        $('.scrollspy').scrollSpy();
+    });
+</script>
+</body>
+</html>
